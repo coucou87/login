@@ -13,7 +13,7 @@ export default function LanguageSelector() {
   
   let defaultLanguage = cookie.get('lang');
   useEffect(() => {
-   
+  
     if (!defaultLanguage) {
       cookie.set('dir', defaultLanguage === 'fa' ? 'rtl' : 'ltr');
       defaultLanguage = window.navigator.language.substring(0, 2);
