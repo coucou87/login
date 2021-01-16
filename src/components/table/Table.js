@@ -3,7 +3,7 @@ import { Text } from '../container/language';
 import Cookies from 'universal-cookie';
 import './table.css';
 
-export default function Table({ fullname, name, username }) {
+export default function Table({ fullname, name, username, id }) {
     const cookie = new Cookies();
     const getDirection = () => { return cookie.get('dir') }
 
@@ -12,6 +12,14 @@ export default function Table({ fullname, name, username }) {
             <table>
                 <thead></thead>
                 <tbody>
+                <tr>
+                        <td>
+                            <label >{<Text tid="id" />}</label>
+                        </td>
+                        <td>
+                            <label >{id}</label>
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <label >{<Text tid="fullname" />}</label>

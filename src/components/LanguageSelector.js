@@ -8,12 +8,11 @@ export default function LanguageSelector() {
   const { userLanguage, userLanguageChange } = useContext(LanguageContext);
   const cookie = new Cookies();
 
-  // set selected language by calling context method
   const handleLanguageChange = e => userLanguageChange(e.target.value);
-  
+
   let defaultLanguage = cookie.get('lang');
   useEffect(() => {
-  
+
     if (!defaultLanguage) {
       cookie.set('dir', defaultLanguage === 'fa' ? 'rtl' : 'ltr');
       defaultLanguage = window.navigator.language.substring(0, 2);

@@ -22,6 +22,7 @@ export default function Register({ getModel }) {
         switch (cookie.get('lang')) {
             case ('en'): return "2"
             case ('fa'): return "1"
+            default:;
         }
     }
 

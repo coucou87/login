@@ -61,7 +61,7 @@ export default function Authenticated() {
           {dictionary.enterText}
             {showModal && <ErrorModal errorTxt={errorMessage} handleClose={handleClose} />}
             <div className="auth-wrapper">
-                <Table name={name} fullname={fullname} username={username} />
+                <Table id={id} name={name} fullname={fullname} username={username} />
                 {!loading && <Loader />}
                 <div className="auth-btn-container">
                     <Button onClick={exit} className="auth-btn">

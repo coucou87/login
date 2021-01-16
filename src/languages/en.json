@@ -14,5 +14,6 @@
   "register-input": "Please enter your phonenumber or email.",
   "exit-btn" : "Exit",
   "logout-btn":"Log out",
-  "information": "Your panel"
+  "information": "Your panel",
+  "id": "Id:"
 }
